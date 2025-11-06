@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  background: transparent;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout principal */
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px;
+}
+
+/* Texto informativo à esquerda */
+.conteudo .texto {
+  width: 60%;
+  color: #222;
+}
+
+/* Animação fixa à direita */
+.alerta-container {
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+  width: 200px;
+  height: 180px;
+  animation: flutuar 3s ease-in-out infinite;
+  z-index: 10;
+}
+
+/* Triângulo vermelho escuro */
+.triangulo {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 180px solid #8B0000;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Interior branco */
+.triangulo::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -90px;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 160px solid white;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Exclamação */
+.exclamacao {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  font-size: 90px;
+  font-weight: bold;
+  color: #8B0000;
+  line-height: 0.8
+}
+
+/* Animação de flutuação */
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
+
+/* Chuva de símbolos */
+.chuva {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  overflow: visible;
+}
+
+.simbolo {
+  position: absolute;
+  bottom: 0;
+  color: #8B0000;
+  font-weight: bold;
+  font-size: 20px;
+  opacity: 0.9;
+  animation: cair 2s linear infinite;
+}
+
+@keyframes cair {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px) scale(0.5);
+    opacity: 0;
+  }
+}

@@ -40,6 +40,9 @@
         gap: 40px;
         padding: 0 10%;
     }
+    ul{
+        margin-left: 5%;
+    }
 
     /* Coluna de texto */
     .texto {

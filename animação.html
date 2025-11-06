@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animação de Alerta CSS</title>
+<style>
+  body {
+    margin: 0;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Container geral */
+  .alerta-container {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    animation: flutuar 3s ease-in-out infinite;
+  }
+
+  /* Triângulo de alerta */
+  .triangulo {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 180px solid #8B0000; /* vermelho escuro */
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  /* Triângulo interno branco (para efeito de borda) */
+  .triangulo::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -90px;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 160px solid white;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+
+  /* Exclamação no centro */
+  .exclamacao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    font-size: 90px;
+    font-weight: bold;
+    color: #8B0000;
+    line-height: 0.8;
+  }
+
+  /* Flutuação suave */
+  @keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-25px); }
+  }
+
+  /* Cachoeira de caracteres */
+  .chuva {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    overflow: visible;
+  }
+
+  .simbolo {
+    position: absolute;
+    bottom: 0;
+    color: #8B0000;
+    font-weight: bold;
+    font-size: 20px;
+    opacity: 0.9;
+    animation: cair 2s linear infinite;
+  }
+
+  @keyframes cair {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(120px) scale(0.5);
+      opacity: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="alerta-container">
+  <div class="triangulo"></div>
+  <div class="exclamacao">!</div>
+  <div class="chuva"></div>
+</div>
+
+<script>
+  const chuva = document.querySelector('.chuva');
+  const simbolos = ['!', '#', '$', '%', '@', '*'];
+
+  function criarSimbolo() {
+    const span = document.createElement('span');
+    span.classList.add('simbolo');
+    span.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+    span.style.left = Math.random() * 90 + '%';
+    span.style.animationDuration = (2 + Math.random() * 2) + 's';
+    chuva.appendChild(span);
+
+    // Remover após a animação
+    setTimeout(() => span.remove(), 2000);;
+  }
+
+  setInterval(criarSimbolo, 80); // cai mais rápido (mais símbolos)
+  setInterval(criarSimbolo, 30);  // chuva intensa
+  setInterval(criarSimbolo, 300); // mais espaçado
+</script>
+
+</body>
+</html>
