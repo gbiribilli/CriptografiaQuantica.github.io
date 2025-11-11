@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia - Conceitos e Técnicas</title>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia - Conceitos e Técnicas</title>
+    <link rel="stylesheet" href="../Css/index.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <nav class="navbar">
+            
+            <a href="criptografiaQuantica.html"> 
+        <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+        <span class="texto">Criptografia Quântica</span>
+    
+            </a>
+
+            <a href="Simulação.html"> 
+                <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+                <span class="texto">Simulação</span>
+            </a>
+
+            <a href="criptografiaPosQuantica.html"> 
+                <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+                <span class="texto">PQC</span>
+            </a>
+
+            <a href="ApocalipseQuantico.html"> 
+                <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+                <span class="texto">APCQ</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+    
+    </main>
+
+    <footer>
+        <p>Informações sobre criptografia - Conceitos fundamentais e aplicações</p>
+    </footer>
+</body>
+</html>
+
+</head>
+<body>
+    
+    
+    <main>
+        <section>
+            <p>A criptografia é a ciência que estuda técnicas para proteger informações, garantindo que apenas pessoas autorizadas possam compreendê-las. Um exemplo famoso é a Cifra de César, usada por Júlio César para enviar mensagens militares. Nela, cada letra do texto original é substituída por outra letra deslocada algumas posições no alfabeto — por exemplo, com um deslocamento de 3, A vira D, B vira E, e assim por diante.</p>
+            
+            <p>Com o avanço da tecnologia, a criptografia passou a ser fundamental na era digital, sendo usada em praticamente tudo: senhas, transações bancárias, mensagens de aplicativos, sites da internet e até documentos sigilosos de governos.</p>
+        </section>
+        
+        <section>
+            <h2>Funcionamento Básico</h2>
+            <p>O funcionamento básico da criptografia envolve dois processos principais:</p>
+            <ul>
+                <li><strong>Cifrar (ou criptografar):</strong> transformar uma mensagem normal (texto claro) em uma mensagem codificada (texto cifrado) usando uma chave.</li>
+                <li><strong>Decifrar (ou descriptografar):</strong> transformar o texto cifrado de volta em texto claro usando a mesma chave (ou outra, dependendo do tipo de criptografia).</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Tipos de Criptografia</h2>
+            
+            <div class="highlight">
+                <h3>Criptografia Simétrica (Chave Privada)</h3>
+                <p>Usa a mesma chave para cifrar e decifrar. É rápida, mas exige que a chave seja compartilhada de forma segura entre as partes.</p>
+                <p>Alguns dos principais atributos da criptografia simétrica incluem:</p>
+                <ul>
+                    <li><strong>Velocidade:</strong> o processo de criptografia é comparativamente rápido.</li>
+                    <li><strong>Eficiência:</strong> a criptografia de chave única é adequada para grandes quantidades de dados e requer menos recursos.</li>
+                    <li><strong>Confidencial:</strong> a criptografia simétrica protege os dados de forma eficaz e impede que qualquer pessoa sem a chave descriptografe as informações.</li>
+                </ul>
+            </div>
+            
+            <div class="highlight">
+                <h3>Criptografia Assimétrica (Chave Pública)</h3>
+                <p>Usa duas chaves diferentes, uma pública e uma privada. O que é cifrado com uma só pode ser decifrado com a outra. Esse tipo é mais seguro e muito usado na internet, como nos sites com "https".</p>
+                <p>Alguns dos principais atributos da criptografia assimétrica incluem:</p>
+                <ul>
+                    <li><strong>Segurança:</strong> a criptografia assimétrica é considerada mais segura.</li>
+                    <li><strong>Robustez:</strong> a criptografia de chave pública oferece mais benefícios, proporcionando confidencialidade, autenticidade e não repúdio.</li>
+                    <li><strong>Intensivo para recursos:</strong> ao contrário da criptografia de chave única, a criptografia assimétrica é mais lenta e requer mais recursos, o que pode ser proibitivamente caro em alguns casos.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Objetivos da Criptografia</h2>
+            <p>A criptografia é essencial para a segurança da informação, pois garante três coisas importantes:</p>
+            <ul>
+                <li><strong>Confidencialidade</strong> (ninguém além do destinatário pode ler a mensagem),</li>
+                <li><strong>Integridade</strong> (a mensagem não foi alterada),</li>
+                <li><strong>Autenticidade</strong> (a mensagem vem de quem realmente diz enviá-la).</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Métodos e Algoritmos de Criptografia</h2>
+            
+            <div class="algorithm-section">
+                <div class="algorithm-title">
+                    <h3>Exemplos de Algoritmos Simétricos</h3>
+                </div>
+                <div class="algorithm-list">
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">DES (Data Encryption Standard)</div>
+                        <p>Um dos primeiros padrões amplamente usados, mas hoje considerado inseguro.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">AES (Advanced Encryption Standard)</div>
+                        <p>O mais utilizado atualmente, escolhido como padrão mundial por sua segurança e desempenho.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">Blowfish</div>
+                        <p>Criado em 1993 por Bruce Schneier, é rápido, seguro e de domínio público, com chaves de até 448 bits. Foi uma alternativa mais moderna ao DES.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">Twofish</div>
+                        <p>Sucessor do Blowfish, criado em 1998 pelo mesmo autor. Trabalha com blocos de 128 bits e chaves de até 256 bits, sendo ainda mais seguro e eficiente.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">RC4</div>
+                        <p>Um algoritmo de fluxo popular no passado, mas atualmente substituído por opções mais seguras.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="algorithm-section">
+                <div class="algorithm-title">
+                    <h3>Exemplos de Algoritmos Assimétricos</h3>
+                </div>
+                <div class="algorithm-list">
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">RSA (Rivest–Shamir–Adleman)</div>
+                        <p>Baseado em operações com números primos muito grandes.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">ECC (Elliptic Curve Cryptography)</div>
+                        <p>Utiliza curvas elípticas, oferecendo alta segurança com chaves menores.</p>
+                    </div>
+                    <div class="algorithm-item">
+                        <div class="algorithm-name">DSA (Digital Signature Algorithm)</div>
+                        <p>Empregado em assinaturas digitais e verificação de autenticidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Informações sobre criptografia - Conceitos fundamentais e aplicações</p>
+    </footer>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Criptografia</title>
-  <link rel="stylesheet" type="text/css" href="Css/Criptografia.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../Css/Criptografia.css" media="screen" />
 </head>
 <body>
   
@@ -13,20 +13,26 @@
     
         <nav class="navbar">
            
-            <a href="Criptografia.html"> 
-        <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
-        <span class="texto">Simulação</span>
-    
-            </a>
-
-            <a href="Criptografia.html"> 
+          <a href="criptografiaTradicional.html"> 
         <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
         <span class="texto">Criptografia</span>
     
             </a>
-             <a href="ApocalipseQuantico.html"> 
+
+            <a href="criptografiaQuantica.html"> 
         <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
-        <span class="texto">APCQ</span>
+        <span class="texto">Criptografia Quântica</span>
+    
+            </a>
+
+            <a href="criptografiaPosQuantica.html"> 
+                <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+                <span class="texto">PQC</span>
+            </a>
+
+            <a href="ApocalipseQuantico.html"> 
+                <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+                <span class="texto">APCQ</span>
             </a>
         </nav>
 </header>
@@ -50,7 +56,7 @@
     <textarea id="resultadoDescriptografia" readonly placeholder="Texto descriptografado aparecerá aqui..."></textarea>
   </section>
 
-  <script src="Codigos/Criptografia.js"></script>
+  <script src="../Codigos/Criptografia.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const btnCriptografar = document.getElementById("btnCriptografar");
