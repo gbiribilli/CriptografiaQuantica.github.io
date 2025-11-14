@@ -25,7 +25,7 @@ body {
    CABEÇALHO
    ============================== */
 header {
-    background-image: url(../images/fotobackground.jpg);
+     background-image: url(../images/fotobackground.jpg);
     text-align: center;
     width: 100vw;
     height: 150px;
@@ -45,7 +45,7 @@ header {
 }
 
 .navbar a {
-  color: #00e5ff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 10px 15px;
@@ -120,31 +120,4 @@ button {
 button:hover {
   background-color: #333;
   border-color: #666;
-}
-
-/* ==============================
-   RODAPÉ
-   ============================== */
-footer {
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  margin-top: auto;
-  border-top: 1px solid #333;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-/* ==============================
-   RESPONSIVIDADE
-   ============================== */
-@media (max-width: 768px) {
-  section {
-    width: 95%;
-    padding: 25px;
-  }
-
-  h1, h2, h3 {
-    font-size: 2rem;
-  }
 }

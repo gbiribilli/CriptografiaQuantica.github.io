@@ -14,7 +14,11 @@
 <header class="header">
     <a href="#" class="logo"> </a>
     
-        <nav class="navbar">
+      <nav class="navbar">
+            <a href="../index.html"> 
+        <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
+        <span class="texto">Início</span>
+            </a>
            
              <a href="../pages/criptografiaTradicional.html"> 
         <span class="icon"><ion-icon name="telescope-outline"></ion-icon></span>
@@ -47,54 +51,60 @@
         </nav>
 </header>
 
+<h1>Criptografia</h1>
+
 <section class="conteudo">
     <div class="texto">
-        <h3>Distribuição de Chaves Quânticas</h3>
-    </br>
+        <h2>Distribuição de Chaves Quânticas</h2>
         <p>
-           Para entender a Distribuição Quântica de Chaves, é preciso lembrar que, na Mecânica Quântica, partículas podem existir em vários estados ao mesmo tempo,
-            e medir esses estados sempre os altera — ideia garantida pelo Princípio da Incerteza de Heisenberg. Na comunicação quântica, a informação é codificada em qubits,
-            geralmente fótons, em vez de bits comuns. 
-            A criptografia quântica usa essas propriedades para garantir segurança absoluta. Existem dois grandes tipos de protocolos:
+            Para compreender este Sistema de Distribuição de Chaves são necessários alguns
+            conhecimentos de Mecânica Quântica. Esta ciência nos diz que as partículas não existem num
+            estado quântico específico, mas sim em vários estados ao mesmo tempo, com diferentes
+            probabilidades de estarem em cada um caso alguém as observe. O Princípio da Incerteza de
+            Heisenberg garante-nos não ser possível determinar em simultâneo todos os estados físicos de
+            uma partícula sem interferir na mesma, alterando-a de forma inegável. A comunicação
+            quântica envolve criptografar informação em estados quânticos, ou qubits, ao invés dos bits
+            usados na comunicação clássica. Normalmente, fótons ou fotõessão usados como qubits. 
         </p>
     </br>
         <p>
-           <h2>Protocolos de Preparar e Medir</h2>
+            A criptografia quântica explora certas propriedades desses estados quânticos para garantir sua
+            segurança. Existem diferentes formas de distribuição de chaves quânticas, mas elas podem ser
+            divididas em duas categorias principais, dependendo de qual propriedade ela utiliza. 
+        </p>
+    </br>
+        <p>
+           <strong>Protocolos de Preparar e Medir</strong>
 
         </p>
         <p>
-            Como medir um estado quântico o altera, qualquer tentativa de espionagem inevitavelmente modifica os qubits, permitindo detectar a presença do intruso.
+            Diferente da física clássica, o ato de medir é parte importante da mecânica quântica. Em geral,
+            medir um estado quântico desconhecido irá modificar aquele estado de alguma forma. Isso
+            pode ser explorado de forma a detectar um espião na comunicação, que necessariamente terá
+            que medir um estado quântico e acabará por alterá-lo.
         </p>
     </br>
         <p>
-            <h2>Protocolos baseados em Emaranhamento Quântico</h2>
+            <strong>Protocolos baseados em Emaranhamento Quântico</strong>
         </p>
         <p>
             O estado quântico de dois (ou mais) objetos separados pode se tornar ligado de uma tal
-            maneira que eles têm que ser descritos como um estado quântico emaranhado. Isso é conhecido como emaranhamento quântico e significa, por exemplo,
+            maneira que eles têm que ser descritos como um estado quântico emaranhado, não como
+            objetos individuais. Isso é conhecido como emaranhamento quântico e significa, por exemplo,
             que realizar uma medida em um objeto irá afetar o outro. Se um par de objetos emaranhados
             é compartilhado por emissor e receptor, qualquer pessoa tentando interceptar uma das
             partículas irá alterar todo o sistema, permitindo que sua presença seja detectada.
         </p>
-        <br></br>
+        <p>
+            Leia Também <a href="/pages_criptografia_quantica/ProtocoloBB84.html">Protoloco BB84</a>
+        </p>
         
     </div>
 
-    <div style="text-align: center;">
-  <img src="/images/distribuicaodechaves.png" alt="Descrição da imagem" width= "700" height= "500">
-</div>
-
-<p>
-            Para melhor compreensão leia também <a class="link-quantico" href="/pages_criptografia_quantica/ProtocoloBB84.html">&nbsp;Protoloco BB84</a>
-        </p>
-
-    
+    <div class="imagem">
+        <img src="https://via.placeholder.com/400x300" alt="Imagem ilustrativa ou animação">
+    </div>
 </section>
-
-<footer id="footer">
-        <h1 id="h1-footer">Centro Universitário Senac</h1>
-        <p class="p1-footer">Desenvolvido por Aline Douaki, Guilherme Biribilli, Mateus Borba, William Takahashi</p>
-    </footer>
 
 
 </body>
