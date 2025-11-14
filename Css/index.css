@@ -12,14 +12,8 @@ body {
     color: #e0e0e0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-<<<<<<< Updated upstream
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-=======
     margin: 0;
     overflow-x: hidden;
->>>>>>> Stashed changes
 }
 
 /* ==============================
@@ -28,20 +22,14 @@ body {
 header {
     background-image: url(../images/fotobackground.jpg);
     text-align: center;
-<<<<<<< Updated upstream
-    margin-bottom: 30px;
-=======
     width: 100vw;
     height: 150px;
     margin-bottom: 50px;
     margin: 0 auto 40px auto;
->>>>>>> Stashed changes
     padding: 20px;
     border-bottom: 1px solid #333;
 }
 
-<<<<<<< Updated upstream
-=======
 .conteudo {
     max-width: 1200px;
     margin: 0 auto;
@@ -58,7 +46,7 @@ header {
 }
 
 .navbar a {
-  color: #00e5ff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.8rem;
   padding: 10px 15px;
@@ -75,7 +63,6 @@ a {
     color: #79ffed;
 }
 
->>>>>>> Stashed changes
 /* ==============================
    TÍTULOS
    ============================== */
